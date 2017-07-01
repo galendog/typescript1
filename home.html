@@ -33,7 +33,27 @@
         console.log("Adding a class to make all elements bold");
         $("a").addClass("test");
 
+        // Invoking myCallBackWithOutParams
+        $(document).ready(myCallBackWithOutParams);
+
         // $("a").removeClass("test");
+
+        //$.get("myhtmlpage.html", myCallBack);
+
+        //$.get("myhtmlpage.html", function () {
+
+        //    myCallBack(param1, param2);
+
+        //});
+
+        function myCallBackWithOutParams() {
+            alert("In myCallBackWithOutParams ");
+        }
+
+        function myCallBackWithParams(param1, param2) {
+            alert("In myCallBackWithOutParams ");
+        }
+
     </script>
 </body>
 </html>
